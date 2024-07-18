@@ -1,37 +1,45 @@
-body{
+/* Estilos generales */
+
+body {
     font-family: sans-serif;
     background-color: #ffffff;
-    color: black;
+    color: #000000;
 }
 
-.container{
+.AMLV-container {
     width: 600px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
     border: 2px solid #0f62fe;
     border-radius: 8px;
 }
 
-.header{
+
+/* Encabezado */
+
+.AMLV-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-.header h2 {
+.AMLV-header h2 {
     margin: 0;
 }
 
-.dots {
+
+/* Puntos del encabezado (decoración) */
+
+.AMLV-dots {
     display: flex;
     gap: 5px;
 }
 
-.dot {
+.AMLV-dot {
     width: 12px;
     height: 12px;
     background-color: #333;
@@ -39,30 +47,29 @@ body{
     display: inline-block;
 }
 
-.search-form {
+
+/* Formulario de búsqueda */
+
+.AMLV-search-form {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
 }
 
-.input-group {
+.AMLV-input-group {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-#apellido {
-    background-color: #0f62fe;
-}
-
-.input-group label {
+.AMLV-input-group label {
     display: block;
     font-size: 12px;
     margin-bottom: 5px;
     color: #333;
 }
 
-.input-group input[type="text"] {
+.AMLV-input-group input[type="text"] {
     width: 200px;
     padding: 12px;
     font-size: 16px;
@@ -70,10 +77,9 @@ body{
     border-radius: 4px;
     background-color: #ffffff;
     color: #333;
-    /* Texto gris oscuro */
 }
 
-.input-group button {
+.AMLV-input-group button {
     margin-top: 20px;
     background-color: #0f62fe;
     color: #ffffff;
@@ -87,40 +93,35 @@ body{
 
 /* Tabla */
 
-.data-table {
+.AMLV-data-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #ffffff;
-    /* Fondo blanco */
 }
 
-.data-table th,
-.data-table td {
+.AMLV-data-table th,
+.AMLV-data-table td {
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border: 1px solid #ccc;
-    /* Borde gris claro */
 }
 
-.data-table th {
-
+.AMLV-data-table th {
     background-color: #f0f0f0;
-    
     color: #333;
-  
 }
 
-.actions-header {
+.AMLV-actions-header {
     width: 120px;
 }
 
-.actions-cell {
+.AMLV-actions-cell {
     text-align: center;
 }
 
-.edit,
-.delete {
+.AMLV-edit,
+.AMLV-delete {
     padding: 8px 12px;
     border: none;
     cursor: pointer;
@@ -128,12 +129,67 @@ body{
     color: #ffffff;
 }
 
-.edit {
+.AMLV-edit {
     background-color: #28a745;
-    /* Verde */
 }
 
-.delete {
+.AMLV-delete {
     background-color: #dc3545;
-    /* Rojo */
+}
+
+
+/* Alerta personalizada */
+
+.AMLV-custom-alert {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e1e1e;
+    color: #fff;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #0f62fe;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.AMLV-alert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #0f62fe;
+    color: #fff;
+    border-bottom: 2px solid #1e1e1e;
+}
+
+.AMLV-close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.AMLV-alert-content {
+    padding: 15px;
+    text-align: center;
+}
+
+#AMLV-alertMessage {
+    margin: 0;
+    font-size: 14px;
+}
+
+#AMLV-alertOkButton {
+    background-color: #0f62fe;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
 }

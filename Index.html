@@ -2,40 +2,50 @@
 <html>
 
 <head>
+    <title>Crear Cliente</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h2>CREAR CLIENTE</h2>
-            <div class="dots">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-
-        </div>
-
-        <div class="search-form">
-            <div class="input-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Nombre" value="Angel">
-                <button type="button">Buscar</button>
-            </div>
-            <div class="input-group">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" placeholder="Apellido">
+    <div class="AMLV-container">
+        <div class="AMLV-header">
+            <h2>Crear cliente</h2>
+            <div class="AMLV-dots">
+                <span class="AMLV-dot"></span>
+                <span class="AMLV-dot"></span>
+                <span class="AMLV-dot"></span>
             </div>
         </div>
 
-        <table class="data-table">
+        <div class="AMLV-search-form">
+            <div class="AMLV-input-group">
+                <label for="AMLV-nombre">Nombre</label>
+                <input type="text" id="AMLV-nombre" placeholder="Nombre" value="Marvin">
+                <button type="button" class="AMLV-search-btn">Buscar</button>
+            </div>
+            <div class="AMLV-input-group">
+                <label for="AMLV-apellido">Apellido</label>
+                <input type="text" id="AMLV-apellido" placeholder="Apellido">
+            </div>
+        </div>
+        <div id="AMLV-customAlert" class="AMLV-custom-alert">
+            <div class="AMLV-alert-header">
+                <span class="AMLV-alert-icon">⏺</span>
+                <button class="AMLV-close-button" id="AMLV-alertCloseButton">✖</button>
+            </div>
+            <div class="AMLV-alert-content">
+                <p id="AMLV-alertMessage"></p>
+                <button id="AMLV-alertOkButton">OK</button>
+            </div>
+        </div>
+
+        <table class="AMLV-data-table">
             <thead>
                 <tr>
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>Categoría</th>
-                    <th class="actions-header">Acciones</th>
+                    <th class="AMLV-actions-header">Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,16 +53,17 @@
                     <td>Angel</td>
                     <td>Mena</td>
                     <td rowspan="2">Gerentes</td>
-                    <td class="actions-cell"><button class="edit">E</button> <button class="delete">D</button></td>
+                    <td class="AMLV-actions-cell"><button class="AMLV-edit">E</button> <button class="AMLV-delete">D</button></td>
                 </tr>
                 <tr>
                     <td>Lisseth</td>
                     <td>Godoy</td>
-                    <td class="actions-cell"><button class="edit">E</button> <button class="delete">D</button></td>
+                    <td class="AMLV-actions-cell"><button class="AMLV-edit">E</button> <button class="AMLV-delete">D</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
