@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>CREAR CLIENTE</h2>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+        <div class="search-form">
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Nombre" value="Angel">
+                <button type="button">Buscar</button>
+            </div>
+            <div class="input-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Apellido">
+            </div>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Categoría</th>
+                    <th class="actions-header">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Angel</td>
+                    <td>Mena</td>
+                    <td rowspan="2">Gerentes</td>
+                    <td class="actions-cell"><button class="edit">E</button> <button class="delete">D</button></td>
+                </tr>
+                <tr>
+                    <td>Lisseth</td>
+                    <td>Godoy</td>
+                    <td class="actions-cell"><button class="edit">E</button> <button class="delete">D</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
